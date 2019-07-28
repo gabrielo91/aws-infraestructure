@@ -1,0 +1,62 @@
+https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/
+0. Operational Excellence
+1. Security
+2. Performance
+3. Reliabilty
+    -> TPO
+    -> TCO 
+4.Cost optimization    
+
+
+
+-> AIM
+    -> Permissions
+    -> Group of permissions -> policies
+    -> Group of policies -> roles for services access'
+    -> Policies can be assigned to users or groups
+
+amazon
+
+    -> Regions
+    -> AZ => within a region
+    -> Edge locations -> infraestructure (cloudfront uses it in order to deliver content (CDN))
+
+    usuario -> cloudfront (edge cdn) cloudfront esta en las edge location (i takes time to replicate )
+
+
+1. REDES. (ALB => Application load balancer)
+
+
+Aplicacion de alta disponibilidad al menos 2 AZ's
+VPC -> Virtual private cloud
+
+SPOT INSTANCES -> TE LAS QUITAN -> no almacenar estados
+
+***********************************************************************************************************************
+FIRST STEP: 
+    -> VPC max 5 per region (development enviroments - staging, dev, prod). Isolated: Decisiones de diseño de redes
+        -> Create subnets
+        -> Add internet gateway
+        -> Here i have ip for assing to my resources
+
+***********************************************************************************************************************************
+SECOND STEP
+
+
+
+1. UP infra
+    -> instrucciones crear la VPC y subredes redes.yml
+        -> VPC
+        -> subred
+        -> Routing Tables
+        -> load balancer
+        -> internet gateway 
+
+    -> Servicios  services.yml
+        -> Cluster
+        -> plantilla de servicios (cada ms es un servicio y tiene su politica de escalamiento)
+            -> cada servicio va bajar su info de duckerhub o algun lado
+
+
+
+

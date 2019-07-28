@@ -1,0 +1,33 @@
+{
+  "name": "aws-infraestructure",
+  "version": "1.0.0",
+  "description": "Notes and basic code realated with main aws services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
+    "linter": "eslint .",
+    "linter-fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielo91/aws-infraestructure.git"
+  },
+  "keywords": [],
+  "author": "Gabriel <gabrielo_9103@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielo91/aws-infraestructure/issues"
+  },
+  "homepage": "https://github.com/gabrielo91/aws-infraestructure#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
