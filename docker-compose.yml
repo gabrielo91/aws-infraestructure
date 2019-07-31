@@ -1,0 +1,8 @@
+version: '0.1.0'
+services:
+ server:
+   image: gabrielo91/aws-node:latest
+   container_name: aws-node-server
+   restart: unless-stopped
+   ports:
+     - "80:80"
