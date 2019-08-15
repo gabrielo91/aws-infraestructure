@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/gabrielo91/aws-infraestructure#readme",
   "devDependencies": {
+    "dotenv": "^8.0.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-plugin-import": "^2.18.2",

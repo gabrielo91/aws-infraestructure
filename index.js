@@ -15,5 +15,5 @@ app.get('/test', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  logger(`Listen on port ${4044}`)
+  logger(`Listen on port ${PORT}`)
 })
