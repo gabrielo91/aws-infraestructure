@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4044
 
 app.get('/test', (req, res) => {
   logger(`Serving from process ${process.pid} and host ${hostname}`)
-  res.send({ process: process.pid , hostname, hola: 'NOOOOBS'})
+  res.send({ process: process.pid , hostname, hola: 'SUPER NOOBS'})
 })
 
 app.listen(PORT, () => {
